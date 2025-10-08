@@ -1,0 +1,27 @@
+# Arquivos de Sistema e de Ambiente
+##################################
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+
+# Ambientes Virtuais
+####################
+venv/
+*.pyc
+
+# Dados e Modelos Treinados (Arquivos Grandes)
+#############################################
+# Os dados brutos não devem ser versionados no Git devido ao tamanho
+dados/ml-32m/ratings.csv
+dados/ml-32m/movies.csv
+dados/ml-32m.zip
+
+# Ignora o cache do Streamlit e dos Notebooks
+.streamlit/
+.ipynb_checkpoints/
+__pycache__/
+
+# Modelos treinados
+
+*.bin
