@@ -5,7 +5,10 @@ import pandas as pd
 import pickle
 from typing import Dict, Any, Tuple, Set
 
+# --- CONFIGURAÇÃO ---
 DATA_PATH = 'dados/ml-32m/ratings.csv'
+# 👇👇👇 COLE O LINK CORRETO AQUI
+MODEL_URL = 'https://drive.google.com/uc?export=download&id=18S57U_3Pic74oFef-2QjwkbuvjUFEYXe' 
 MODEL_PATH = 'svd_model_data.pkl'
 
 @st.cache_resource

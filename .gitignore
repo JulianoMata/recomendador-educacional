@@ -23,5 +23,5 @@ dados/ml-32m.zip
 __pycache__/
 
 # Modelos treinados
-
+*.pkl
 *.bin
