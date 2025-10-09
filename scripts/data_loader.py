@@ -17,30 +17,6 @@ MODEL_PATH = 'svd_model_data.pkl'
 def download_model(url, filepath):
     """Baixa o modelo de uma URL se ele não existir localmente, com barra de progresso."""
     if not os.path.exists(filepath):
-        st.info(f"Modelo não encontrado. Iniciando download (aprox. 1.1 GB)...")
-        progress_text = "Baixando modelo... Isso pode levar alguns minutos, dependendo da conexão."
-        progress_bar = st.progress(0, text=progress_text)
-        
-        with requests.get(url, stream=True) as r:
-            r.raise_for_status()
-            total_size_in_bytes = int(r.headers.get('content-length', 0))
-            bytes_downloaded = 0
-            with open(filepath, 'wb') as f:
-                for chunk in r.iter_content(chunk_size=8192): 
-                    f.write(chunk)
-                    bytes_downloaded += len(chunk)
-                    if total_size_in_bytes > 0:
-                        # Atualiza a barra de progresso
-                        progress = min(1.0, bytes_downloaded / total_size_in_bytes)
-                        progress_bar.progress(progress, text=f"Baixando modelo... ({bytes_downloaded/1024/1024:.1f} / {total_size_in_bytes/1024/1024:.1f} MB)")
-        
-        progress_bar.progress(1.0, text="Download concluído!")
-        progress_bar.empty()
-
-@st.cache_data
-def download_model(url, filepath):
-    """Baixa o modelo de uma URL se ele não existir localmente, com barra de progresso."""
-    if not os.path.exists(filepath):
         st.info(f"Modelo não encontrado localmente. Iniciando download...")
         progress_text = "Baixando modelo (aprox. 1.1 GB)... Isso pode levar alguns minutos."
         progress_bar = st.progress(0, text=progress_text)
