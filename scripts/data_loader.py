@@ -12,7 +12,7 @@ from typing import Dict, Any, Tuple, Set
 # --- 2. CONFIGURAÇÕES GLOBAIS ---
 DATA_PATH = 'dados/ml-32m/ratings.csv'
 # URL de download direto para o modelo pré-treinado (hospedado no Google Drive)
-MODEL_URL = 'https://drive.google.com/uc?export=download&id=18S57U_3Pic74oFef-2QjwkbuvjUFEYXe'
+MODEL_URL = 'https://drive.google.com/uc?export=download&id=1RJJcByH0cx83orS334n-5uSEHN8LGmeS'
 # Nome do arquivo do modelo como será salvo localmente na raiz do projeto
 MODEL_PATH = 'svd_model_data.pkl'
 
