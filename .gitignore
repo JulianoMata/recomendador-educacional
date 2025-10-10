@@ -26,9 +26,8 @@ dist/
 # ============================================
 # 📦 DADOS E MODELOS GRANDES (NÃO VERSIONAR)
 # ============================================
-# Dados locais e zips originais
-dados/ml-32m/
-dados/ml-32m.zip
+# Dados locais — grandes demais para GitHub
+dados/
 *.csv
 *.zip
 
@@ -45,19 +44,19 @@ dados/ml-32m.zip
 .streamlit/
 .ipynb_checkpoints/
 .notebooks_cache/
-__pycache__/
 .cache/
 logs/
 
 # ============================================
 # ⚙️ CONFIGURAÇÕES DE AMBIENTE OU SECRETOS
 # ============================================
-# (Se futuramente usar chaves, tokens ou configs locais)
+# (Para evitar exposição de chaves ou tokens)
 *.env
 .env.local
 secrets.toml
 config.yaml
 config.json
+.streamlit/secrets.toml
 
 # ============================================
 # 🔬 TESTES, RELATÓRIOS E TEMPORÁRIOS
@@ -67,3 +66,11 @@ htmlcov/
 test_results/
 tmp/
 *.pytest_cache/
+
+# ============================================
+# ⚡ OUTROS (GERAL)
+# ============================================
+# Arquivos gerados automaticamente
+*.swp
+*.bak
+*.orig

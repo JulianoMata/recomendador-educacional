@@ -1,0 +1,31 @@
+# ============================================
+# 🔧 Normalização de linhas (EOL)
+# ============================================
+* text=auto eol=lf
+
+# ============================================
+# 🧮 Arquivos Python e scripts
+# ============================================
+*.py text diff=python
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# ============================================
+# 📊 Dados e Modelos (Git LFS sugerido)
+# ============================================
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+
+# ============================================
+# 📘 Jupyter Notebooks
+# ============================================
+*.ipynb text diff=ipynb
+
+# ============================================
+# 🗃️ Ignora no export (.tar, .zip, etc.)
+# ============================================
+.gitignore export-ignore
+.gitattributes export-ignore
+setup.sh export-ignore
+README.md text
