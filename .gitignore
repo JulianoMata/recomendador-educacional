@@ -1,27 +1,69 @@
-# Arquivos de Sistema e de Ambiente
-##################################
+# ============================================
+# 🧱 ARQUIVOS DE SISTEMA E EDITORES
+# ============================================
 .DS_Store
 Thumbs.db
 *.log
 .vscode/
+.idea/
+*.bak
+*.tmp
 
-# Ambientes Virtuais
-####################
+# ============================================
+# 🐍 AMBIENTES VIRTUAIS E COMPILAÇÕES PYTHON
+# ============================================
 venv/
+.env/
+env/
 *.pyc
-
-# Dados e Modelos Treinados (Arquivos Grandes)
-#############################################
-# Os dados brutos não devem ser versionados no Git devido ao tamanho
-dados/ml-32m/ratings.csv
-dados/ml-32m/movies.csv
-dados/ml-32m.zip
-
-# Ignora o cache do Streamlit e dos Notebooks
-.streamlit/
-.ipynb_checkpoints/
 __pycache__/
+*.pyo
+*.pyd
+*.egg-info/
+build/
+dist/
 
-# Modelos treinados
+# ============================================
+# 📦 DADOS E MODELOS GRANDES (NÃO VERSIONAR)
+# ============================================
+# Dados locais e zips originais
+dados/ml-32m/
+dados/ml-32m.zip
+*.csv
+*.zip
+
+# Modelos de Machine Learning
 *.pkl
 *.bin
+*.joblib
+*.h5
+*.sav
+
+# ============================================
+# 🧠 CACHE E EXECUÇÕES DO STREAMLIT / NOTEBOOKS
+# ============================================
+.streamlit/
+.ipynb_checkpoints/
+.notebooks_cache/
+__pycache__/
+.cache/
+logs/
+
+# ============================================
+# ⚙️ CONFIGURAÇÕES DE AMBIENTE OU SECRETOS
+# ============================================
+# (Se futuramente usar chaves, tokens ou configs locais)
+*.env
+.env.local
+secrets.toml
+config.yaml
+config.json
+
+# ============================================
+# 🔬 TESTES, RELATÓRIOS E TEMPORÁRIOS
+# ============================================
+coverage/
+htmlcov/
+test_results/
+tmp/
+*.pytest_cache/
