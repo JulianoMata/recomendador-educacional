@@ -26,12 +26,13 @@ dist/
 # ============================================
 # 📦 DADOS E MODELOS GRANDES (NÃO VERSIONAR)
 # ============================================
-# Dados locais — grandes demais para GitHub
-dados/
-*.csv
-*.zip
+# Ignora os arquivos de dados brutos específicos, mas permite que a estrutura
+# de pastas (ex: dados/ml-32m/) seja versionada.
+dados/ml-32m/ratings.csv
+dados/ml-32m/movies.csv
+dados/ml-32m.zip
 
-# Modelos de Machine Learning
+# Ignora todos os tipos comuns de modelos de Machine Learning salvos
 *.pkl
 *.bin
 *.joblib
@@ -57,6 +58,11 @@ secrets.toml
 config.yaml
 config.json
 .streamlit/secrets.toml
+
+# ============================================
+# 📜 SCRIPTS LOCAIS (NÃO USADOS PELO DEPLOY)
+# ============================================
+setup.sh
 
 # ============================================
 # 🔬 TESTES, RELATÓRIOS E TEMPORÁRIOS
