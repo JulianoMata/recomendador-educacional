@@ -15,7 +15,7 @@ joblib==1.4.2
 # ============================================
 # 📦 Suporte e Utilitários
 # ============================================
-requests==2.32.3
+gdown==4.7.1  # Usado para baixar o modelo do Google Drive de forma robusta
 pyarrow==17.0.0
 protobuf==5.28.2
 typing_extensions==4.12.2
