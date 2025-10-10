@@ -2,6 +2,8 @@
 
 ## 🌟 Visão Geral do Projeto
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://recomendador-educacional.streamlit.app/)
+
 Este projeto, desenvolvido como requisito de Estágio Supervisionado III, implementa um sistema de recomendação baseado em **Filtros Colaborativos** utilizando o algoritmo **SVD (Singular Value Decomposition)**.
 
 O modelo foi treinado em uma grande base de dados da série **MovieLens** (contendo milhões de interações) e o objetivo é prever a afinidade de um aluno por um tópico, sugerindo o conteúdo mais relevante através de um protótipo interativo construído com Streamlit.
