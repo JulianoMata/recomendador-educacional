@@ -9,7 +9,7 @@ from typing import Dict, Any, Tuple, Set
 # --- CONFIGURAÇÕES GLOBAIS ---
 DATA_PATH = 'dados/ml-32m/ratings.csv'
 # Link de compartilhamento normal do Google Drive
-MODEL_URL = 'https://drive.google.com/file/d/1RJJcByH0cx83orS334n-5uSEHN8LGmeS/view?usp=sharing'
+MODEL_URL = 'https://drive.google.com/uc?id=1iJ3ttB73XXBC-GxWDH-mHJmF26n4e6_R'
 MODEL_PATH = 'svd_model_data.pkl'
 
 @st.cache_data
