@@ -89,7 +89,9 @@ def load_model_and_data() -> Tuple[Any, Tuple, Tuple, int]:
     with st.spinner("🔧 Preparando o motor de recomendação..."):
         user_rated_items: Dict[str, Set[str]] = {}
         for row in ratings_df[['user_id', 'item_id']].itertuples(index=False):
-            user_rated_items.setdefault(row.user_id, set()).add(row.item_id)
+            user_id = str(row.user_id)
+            item_id = str(row.item_id)
+            user_rated_items.setdefault(user_id, set()).add(item_id)
         
         all_item_ids = set(ratings_df['item_id'].unique())
 
