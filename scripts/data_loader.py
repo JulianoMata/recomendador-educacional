@@ -11,7 +11,7 @@ import streamlit as st
 # --- CONFIGURAÇÕES GLOBAIS ---
 DATA_PATH = "dados/ml-32m/ratings.csv"
 # Para o gdown, usamos o link de compartilhamento normal do Google Drive
-MODEL_URL = "https://drive.google.com/file/d/1gN4VJVysJwFH2moIPwc5TwC8m0cySncN"
+MODEL_URL = "https://drive.google.com/drive/folders/15xn6Y-w5e-entW8ClNKxC49YmE3ukfqy"
 MODEL_PATH = "svd_model_data.pkl"  # Caminho relativo na raiz do projeto
 
 # ==========================================================
