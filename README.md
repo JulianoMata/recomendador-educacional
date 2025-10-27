@@ -97,7 +97,7 @@ Antes de começar, garanta que você tenha **Python 3.11+** e **Git** instalados
     streamlit run scripts/app.py
     ```
 
-3. **Importante:** Na primeira vez que você rodar, o aplicativo irá **baixar automaticamente** o modelo pré-treinado (`.pkl`) de 1.9 GB. Uma barra de progresso será exibida no navegador. Este processo é demorado, mas só acontecerá uma vez.
+3. **Importante:** Na primeira vez que você rodar, o aplicativo irá **baixar automaticamente** o modelo pré-treinado (`.pkl`) de 847.6 MB. Uma barra de progresso será exibida no navegador. Este processo é demorado, mas só acontecerá uma vez.
 
 ### Passo 5: Retreinamento do Modelo (Opcional)
 
