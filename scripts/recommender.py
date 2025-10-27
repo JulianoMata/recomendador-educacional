@@ -19,16 +19,18 @@ def get_top_n_recommendations(
     id_to_titulo, id_to_generos = maps
     
     try:
+        # Converte o ID de string do usuário para o ID numérico interno
         user_id_interno = user_map.categories.get_loc(user_id)
     except KeyError:
         st.warning(f"Usuário com ID {user_id} não encontrado no modelo.")
         return pd.DataFrame()
 
     # --- CORREÇÃO AQUI ---
-    # A função .recommend() do implicit espera o ID do usuário e a matriz COMPLETA.
+    # A função .recommend() espera o ID do usuário e a LINHA da matriz correspondente a esse usuário.
+    # O fatiamento `user_item_matrix[user_id_interno]` retorna a linha no formato CSR correto.
     recommended_items = model.recommend(
         user_id_interno,
-        user_item_matrix, # <-- Passamos a matriz inteira, sem o fatiamento
+        user_item_matrix[user_id_interno], # <-- Passamos a linha correta da matriz
         N=n,
         filter_already_liked_items=True
     )

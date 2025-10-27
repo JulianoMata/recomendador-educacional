@@ -28,7 +28,7 @@ def download_model_if_missing(url: str, output_path: str) -> None:
         st.info(f"🟢 Modelo encontrado localmente ({size_mb:.1f} MB).")
         return
 
-    st.warning("📦 Modelo não encontrado. Iniciando download (~1.9 GB)...")
+    st.warning("📦 Modelo não encontrado. Iniciando download (~900 MB)...")
     progress_bar = st.progress(0)
     progress_text = st.empty()
 
@@ -74,7 +74,7 @@ def load_model_and_data() -> Tuple[Any, Any, Any, Any, Tuple, int]:
     model_als = model_data.get("model")
     user_map = model_data.get("user_map")
     item_map = model_data.get("item_map")
-    user_item_matrix = model_data.get("user_item_matrix")
+    user_item_matrix = model_data.get("user_item_matrix").tocsr()
     id_to_titulo = model_data.get("id_to_titulo", {})
     id_to_generos = model_data.get("id_to_generos", {})
     
