@@ -6,7 +6,15 @@
 
 Este projeto, desenvolvido como requisito de Estágio Supervisionado III, implementa um sistema de recomendação baseado em **Filtros Colaborativos** utilizando o algoritmo **SVD (Singular Value Decomposition)**.
 
-O modelo foi treinado em uma grande base de dados da série **MovieLens** (contendo milhões de interações) e o objetivo é prever a afinidade de um aluno por um tópico, sugerindo o conteúdo mais relevante através de um protótipo interativo construído com Streamlit.
+O modelo foi treinado em uma grande base de dados da série **MovieLens** (contendo milhões de interações) e o objetivo é prever a afinidade de um aluno por um tópico, sugerindo o conteúdo mais relevante através de um protótipo interativo construído com Streamlit.# 🎓 Sistema de Recomendação de Conteúdo Educacional
+
+[![Streamlit App](https://recomendador-educacional.streamlit.app/)](https://recomendador-educacional.streamlit.app/)
+
+## 🌟  Visão Geral do Projeto
+
+Este projeto, desenvolvido como requisito de Estágio Supervisionado III, implementa um sistema de recomendação baseado em **Filtros Colaborativos** utilizando o algoritmo **ALS (Alternating Least Squares)** da biblioteca **`implicit`**.
+
+O modelo foi treinado em uma grande base de dados da série **MovieLens** e o objetivo é gerar um ranking de afinidade de um aluno por um tópico, sugerindo o conteúdo mais relevante através de um protótipo interativo construído com Streamlit.
 
 ## 📊 Fonte dos Dados
 
@@ -17,9 +25,9 @@ O dataset utilizado neste projeto é derivado da série MovieLens, mantida pelo 
 
 ## ⚙️ Tecnologias Utilizadas
 
-* **Linguagem:** Python 3.12
+* **Linguagem:** Python 3.11+
 * **Análise e Treinamento:** Jupyter Notebook, Pandas, NumPy
-* **Modelagem de IA:** Scikit-Surprise (SVD)
+* **Modelagem de IA:** `implicit` (ALS), `scipy`
 * **Protótipo Interativo:** Streamlit
 * **Versionamento:** Git e GitHub
 
@@ -37,13 +45,11 @@ RECOMENDADOR-EDUCACIONAL/
 │   ├── __init__.py             # Torna a pasta 'scripts' um módulo Python
 │   ├── 🐍 app.py                # Ponto de entrada da UI (Streamlit)
 │   ├── 🐍 data_loader.py        # Carrega dados e baixa o modelo .pkl
-│   └── 🐍 recommender.py        # Contém a lógica de recomendação
-├── .gitattributes              # Configuração do Git para normalização de linhas
+│   └── 🐍 recommender.py        # Contém a lógica de recomendação (ALS)
 ├── .gitignore                  # Ignora arquivos grandes (dados, modelo .pkl)
 ├── LICENSE                     # Licença do projeto
 ├── README.md                   # Documentação principal
-├── requirements.txt            # Lista de dependências Python
-└── runtime.txt                 # Define a versão do Python para o deploy
+└── requirements.txt            # Lista de dependências Python
 ```
 
 ## 🚀 Como Executar o Projeto
@@ -52,7 +58,7 @@ Siga os passos abaixo para configurar e rodar a aplicação localmente.
 
 ### Passo 1: Pré-requisitos
 
-Antes de começar, garanta que você tenha **Python 3.12** e **Git** instalados.
+Antes de começar, garanta que você tenha **Python 3.11+** e **Git** instalados.
 
 ### Passo 2: Configuração do Projeto
 
@@ -95,5 +101,9 @@ Antes de começar, garanta que você tenha **Python 3.12** e **Git** instalados.
 
 ### Passo 5: Retreinamento do Modelo (Opcional)
 
-Se você desejar recriar o arquivo do modelo (`svd_model_data.pkl`), execute todas as células do notebook localizado em `notebook/analise_dados.ipynb`.
-**Nota:** Este processo requer uma máquina com pelo menos 16 GB de RAM e pode levar várias horas para ser concluído.
+Se você desejar recriar o arquivo do modelo (`implicit_als_model.pkl`), execute todas as células do notebook localizado em `notebook/analise_dados.ipynb`.
+**Nota:** Este processo é muito mais rápido que o SVD anterior, levando apenas alguns minutos.
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
