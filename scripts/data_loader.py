@@ -8,7 +8,8 @@ import pandas as pd
 import streamlit as st
 
 # --- CONFIGURAÇÕES GLOBAIS ---
-MODEL_URL = "https://drive.google.com/file/d/1nVwaFt5e2nmaNIOvE-MOh96RNm_cZa8q/view?usp=sharing"
+MODEL_URL = "https://huggingface.co/JulianoMata/recomendador-educacional-als/resolve/main/implicit_als_model.pkl"
+
 MODEL_PATH = "implicit_als_model.pkl"
 
 @st.cache_data(show_spinner=False)
