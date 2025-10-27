@@ -1,13 +1,11 @@
 # ============================================
 # 🎓 Núcleo do Streamlit e Data Science
 # ============================================
-# Bibliotecas principais para a aplicação, análise e visualização de dados.
-streamlit==1.50.0
-pandas==2.2.3
-numpy==1.26.4
-matplotlib==3.9.2
-seaborn==0.13.2
-tabulate==0.9.0
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
 
 # ============================================
 # 🧠 Filtros Colaborativos (ALS)
@@ -15,18 +13,15 @@ tabulate==0.9.0
 # Biblioteca principal para o modelo de recomendação implícito.
 # scipy é uma dependência crucial para matrizes esparsas.
 implicit
-scipy>=1.10.0
+scipy
 
 # ============================================
 # 📦 Suporte e Utilitários
 # ============================================
-# requests é usado para baixar o modelo do Hugging Face/Google Drive.
-requests>=2.31.0
+# requests e gdown são usados para baixar o modelo.
+requests
+gdown
 pyarrow
 
 # ============================================
-# 🧩 Compatibilidade e Logs
-# ============================================
-# Bibliotecas usadas pelo Streamlit para uma melhor exibição de logs.
-rich
-colorama
+# 
