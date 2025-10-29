@@ -44,6 +44,21 @@ RECOMENDADOR-EDUCACIONAL/
 └── requirements.txt            # Lista de dependências Python
 ```
 
+## ⏱️ Notas de Performance e Ambiente de Desenvolvimento
+
+O treinamento do modelo **ALS** no dataset completo de 32 milhões de interações é notavelmente rápido devido à eficiência da biblioteca **`implicit`** e ao hardware utilizado. O tempo de treinamento observado foi de apenas alguns minutos.
+
+Este resultado foi alcançado no seguinte ambiente de desenvolvimento:
+
+Processador: 13th Gen Intel(R) Core(TM) i7-13620H
+
+RAM Instalada: 32,0 GB
+
+Armazenamento: NVMe SSD
+
+O tempo de execução para o retreinamento pode variar significativamente em máquinas com configurações diferentes.
+
+
 ## 🚀 Como Executar o Projeto
 
 Siga os passos abaixo para configurar e rodar a aplicação localmente.
