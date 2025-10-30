@@ -58,7 +58,6 @@ Armazenamento: NVMe SSD
 
 O tempo de execução para o retreinamento pode variar significativamente em máquinas com configurações diferentes.
 
-
 ## 🚀 Como Executar o Projeto
 
 Siga os passos abaixo para configurar e rodar a aplicação localmente.

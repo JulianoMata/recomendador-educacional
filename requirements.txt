@@ -22,6 +22,10 @@ scipy
 requests
 gdown
 pyarrow
+ipywidgets  # Para barras de progresso interativas no Jupyter Notebook
 
 # ============================================
-# 
+# 🧩 Compatibilidade e Logs
+# ============================================
+rich
+colorama
