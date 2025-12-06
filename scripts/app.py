@@ -13,15 +13,12 @@ if 'recommendations_df' not in st.session_state:
 # --- INTERFACE DO USUÁRIO (UI) ---
 st.title("🎓 Sistema de Recomendação de Conteúdo Educacional")
 st.markdown("Protótipo baseado em **Filtros Colaborativos (ALS / Implicit)**.")
-
-# >>> CORREÇÃO 1: Ordem e remoção de duplicatas na sidebar
 st.sidebar.header("Configuração de Recomendações")
 user_input = st.sidebar.text_input('ID do Aluno (Usuário):', value='1250')
 n_recommendations = st.sidebar.slider('Número de Recomendações (Top-N):', min_value=5, max_value=25, value=10)
 
 # --- LÓGICA DE EXECUÇÃO ---
 if st.sidebar.button('Gerar Recomendações', type="primary"):
-    # >>> CORREÇÃO 2: Validação simplificada
     if not user_input.strip(): # Verifica se o campo não está vazio
         st.warning('Por favor, informe um ID de Aluno.')
     else:
